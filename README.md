@@ -8,9 +8,22 @@ python -m venv .\venv\
 venv\Scripts\activate
 ```
 > **obs**: se der erro no powershell utilize o comando abaixo para resolver a permissão `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-- [ ] Instalar o Django
-- [ ] Criar o projeto ProfCursos
-- [ ] Subir o servidor e testar o projeto
+- [X] Instalar o Django
+```
+python -m pip install django==3.2
+```
+- [X] Criar o projeto ProfCursos
+```
+django-admin.py startproject ProfCursos
+```
+- [X] Subir o servidor e testar o projeto
+```
+entrar na pasta do projeto
+cd ProfCursos
+
+executar o projeto no servidor
+python manage.py runserver
+```
 - [ ] Alterar o idioma do projeto para `pt-br`
 - [ ] Alterar o timezone do projeto para `America/Sao_Paulo`
 - [ ] Criar o app cursos
