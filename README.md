@@ -1,5 +1,13 @@
-- [ ] Criar o ambiente virtual
-- [ ] Ativar  o embiente virtual
+# Prof Cursos - Cursos Profissionalizantes
+- [X] Criar o ambiente virtual
+```
+python -m venv .\venv\
+```
+- [X] Ativar  o embiente virtual
+```
+venv\Scripts\activate
+```
+> **obs**: se der erro no powershell utilize o comando abaixo para resolver a permissão `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - [ ] Instalar o Django
 - [ ] Criar o projeto ProfCursos
 - [ ] Subir o servidor e testar o projeto
