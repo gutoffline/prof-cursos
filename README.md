@@ -28,8 +28,19 @@ python manage.py runserver
 - Abrir o arquivo `settings.py` e na linha 106 trocar `en-us` para `pt-br`
 - [X] Alterar o timezone do projeto para `America/Sao_Paulo`
 - Abrir o arquivo `settings.py` e na linha 108 trocar `UTC` para `America/Sao_Paulo`
-- [ ] Criar o app cursos
-- [ ] Registrar o app cursos
+- [X] Criar o app cursos
+```
+* preciso estar dentro da pasta do projeto (ProfCursos)
+python manage.py startapp cursos
+```
+- [X] Registrar o app cursos
+- no arquivo settings.py adicionar o app **cursos** na lista de apps
+    ```python
+    INSTALLED_APPS[
+        ...
+        'cursos',
+    ]
+    ```
 - [ ] Configurar a rota inicial(index)
 - [ ] Criar a view para a rota inicial
 - [ ] Registrar a rota inicial
