@@ -24,8 +24,10 @@ cd ProfCursos
 executar o projeto no servidor
 python manage.py runserver
 ```
-- [ ] Alterar o idioma do projeto para `pt-br`
-- [ ] Alterar o timezone do projeto para `America/Sao_Paulo`
+- [X] Alterar o idioma do projeto para `pt-br`
+- Abrir o arquivo `settings.py` e na linha 106 trocar `en-us` para `pt-br`
+- [X] Alterar o timezone do projeto para `America/Sao_Paulo`
+- Abrir o arquivo `settings.py` e na linha 108 trocar `UTC` para `America/Sao_Paulo`
 - [ ] Criar o app cursos
 - [ ] Registrar o app cursos
 - [ ] Configurar a rota inicial(index)
