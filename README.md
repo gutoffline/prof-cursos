@@ -41,9 +41,36 @@ python manage.py startapp cursos
         'cursos',
     ]
     ```
-- [ ] Configurar a rota inicial(index)
-- [ ] Criar a view para a rota inicial
-- [ ] Registrar a rota inicial
+- [X] Configurar a rota inicial(index)
+    - Dentro da pasta cursos(app) criar o arquivo `urls.py`
+    - no arquivo `urls.py` 
+        ```python
+            from django.urls import path
+            from . import views
+
+            urlpatterns = [
+                path('', views.index, name='index')
+            ]
+        ```
+- [X] Criar a view para a rota inicial
+    ```python
+        from django.shortcuts import render
+        from django.http import HttpResponse
+
+        def index(request):
+            return HttpResponse("<h1>Seja bem vindo</h1>")
+    ```
+- [X] Registrar a rota inicial
+    - Dentro da pasta **ProCursos** abrir o arquivo `urls.py`
+    ```python
+    from django.contrib import admin
+    from django.urls import path, include
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('',include('cursos.urls')),
+    ]
+    ```
 - [ ] Criar o arquivo index.html
 - [ ] Integrar arquivos estáticos (CSS, JS, IMG)
 - [ ] Inserir o bootstrap
